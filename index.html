@@ -8,7 +8,67 @@
 </head>
 
 <body>
-    <h1>my home page</h1>
+    <div class="container">
+        <h1>
+            Git Command
+        </h1>
+        <div>
+            <h2> Git Installtion and config</h2>
+            <p>
+                git config --global user.name "Your Name"
+                <br> git config --global user.email "your.email@example.com"
+
+            </p>
+            <p>
+                After installation, open a terminal or command prompt and configure Git with your name and email address. This information will be used to identify your commits.
+            </p>
+        </div>
+        <div>
+            <h2>Git Create new branch</h2>
+            <p>
+                git branch
+                <br> git checkout "ritesh"
+                <br> git checkout -b "emBug"
+                <br> git checkout master
+            </p>
+
+            <p>
+                git branch: This command lists all existing branches in the repository. It does not create a new branch. It's useful for checking which branches already exist before creating a new one.
+                <br> git checkout "ritesh": This command switches to the existing branch named "ritesh". It doesn't create a new branch but rather checks out an existing one.
+                <br> git checkout -b "emBug": This command creates a new branch named "emBug" and switches to it. The -b option is used to create a new branch, and "emBug" is the name of the new branch.
+                <br> git checkout master: This command switches back to the "master" branch. It's useful for moving between branches during development.
+            </p>
+        </div>
+
+        <div>
+            <h2>git commit</h2>
+            <p>
+                git init
+                <br> git add index.html
+                <br> git add .
+                <br> git add *
+                <br> git commit -m "my first commit"
+
+            </p>
+
+            <p>
+                git init: This command initializes a new Git repository in the current directory. It creates a hidden .git directory that contains the repository data and metadata.
+                <br> git add index.html: This command stages the file index.html for the next commit. Staging means that Git is tracking changes in this file, and it will be included in the next commit.
+                <br> git add .: This command stages all changes in the current directory and its subdirectories for the next commit. The dot (.) represents the current directory.
+                <br> git add *: This command stages all changes in the current directory (excluding hidden files) for the next commit. The asterisk (*) is a wildcard that matches all files and directories.
+                <br> git commit -m "my first commit": This command creates a commit with the changes staged in the previous steps. The -m option allows you to provide a commit message inline. In this case, "my first commit" is the commit message describing
+                the changes made in this commit.
+            </p>
+        </div>
+        <div>
+            <h2>Git .gitingore</h2>
+
+            <p>
+                gitignore file: You can create this file directly within your project directory. You can use any text editor to create this file. For example, you can use touch command in Unix-based systems or simply create a new file and name it .gitignore.
+            </p>
+
+        </div>
+    </div>
 </body>
 
 </html>
